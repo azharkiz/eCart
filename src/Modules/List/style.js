@@ -5,9 +5,10 @@ const styles = StyleSheet.create({
         flex: 1 
     },
     movieList: {
-        flex: 0.82 
+        flex: Platform.OS === 'android' ? 0.70: 0.72
     },
-    standView: { flex: 0.28 },
+    headerSection: { color: 'black', fontSize: 20, fontWeight: 'bold', marginLeft: 10,  marginTop: 10 },
+    standView: { flex: Platform.OS === 'android' ? 0.30: 0.28, borderRadius: 4, borderTopWidth: 1, borderTopColor: '#010101' },
     mainView: {
         flex: 1,
       },

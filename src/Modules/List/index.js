@@ -95,7 +95,7 @@ const ECart = () => {
   return (
     <SafeAreaView style={styles.safeView}>
       <View style={styles.movieList}>
-        <Text style={{ color: 'black', fontSize: 20, fontWeight: 'bold', marginLeft: 10 }}>{'Ticket Section'}</Text>
+        <Text style={styles.headerSection}>{'Ticket Section'}</Text>
         <FlatList
           data={list}
           renderItem={Card}
@@ -105,7 +105,7 @@ const ECart = () => {
       </View>
       {stand.length ? (
         <View style={styles.standView}>
-          <Text style={{ color: 'black', fontSize: 20, fontWeight: 'bold', marginLeft: 10 }}>{'Stand Section'}</Text>
+          <Text style={styles.headerSection}>{'Stand Section'}</Text>
           <FlatList
             data={stand}
             renderItem={Stand}
